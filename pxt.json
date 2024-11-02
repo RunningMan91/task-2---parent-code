@@ -4,7 +4,8 @@
     "dependencies": {
         "core": "*",
         "radio": "*",
-        "microphone": "*"
+        "microphone": "*",
+        "Task 2 - Parent Code": "github:runningman91/task-2---parent-code#e5f889e7c3971a73dca077409ad914202f1d2ded"
     },
     "files": [
         "main.blocks",
