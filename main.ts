@@ -6,10 +6,14 @@ input.onButtonPressed(Button.B, function () {
     Radio_Channel = 102
     radio.sendNumber(1002)
 })
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    basic.showString("" + (UserID))
+})
+let UserID = 0
 let Radio_Channel = 0
 radio.setGroup(Radio_Channel)
 Radio_Channel = 0
-let UserID = 100
+UserID = 100
 basic.showString("" + (UserID))
 basic.forever(function () {
     if (Radio_Channel == 101) {
