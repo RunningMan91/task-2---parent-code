@@ -1,17 +1,22 @@
 input.onButtonPressed(Button.A, function () {
-    Radio_Channel = 101
     radio.sendNumber(1001)
 })
+input.onButtonPressed(Button.AB, function () {
+    if (Radio_Channel >= 102) {
+        Radio_Channel = 101
+    } else {
+        Radio_Channel = 102
+    }
+})
 input.onButtonPressed(Button.B, function () {
-    Radio_Channel = 102
-    radio.sendNumber(1001)
+    radio.sendNumber(1002)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showString("" + (UserID))
 })
 let UserID = 0
 let Radio_Channel = 0
-Radio_Channel = 0
+Radio_Channel = 101
 UserID = 100
 radio.setGroup(Radio_Channel)
 basic.showString("" + (UserID))
