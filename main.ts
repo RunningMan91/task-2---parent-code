@@ -4,7 +4,7 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.B, function () {
     Radio_Channel = 102
-    radio.sendNumber(1002)
+    radio.sendNumber(1001)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     basic.showString("" + (UserID))
