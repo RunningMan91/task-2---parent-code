@@ -11,9 +11,9 @@ input.onLogoEvent(TouchButtonEvent.Pressed, function () {
 })
 let UserID = 0
 let Radio_Channel = 0
-radio.setGroup(Radio_Channel)
 Radio_Channel = 0
 UserID = 100
+radio.setGroup(Radio_Channel)
 basic.showString("" + (UserID))
 basic.forever(function () {
     if (Radio_Channel == 101) {
